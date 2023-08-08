@@ -3,9 +3,12 @@
 #        for seconds in range(60):
 #            print(hours, ':',minutes, ':', seconds)
 
-columns = int(input('How many colume? '))
+columns = int(input('How many columns? '))
 
-for h in range(101):
-    for c in range(1, columns+1):
-       print (h + c, end=' ')
+for h in range(1, 101, columns):
+    for c in range(columns):
+        num = h + c
+        if num <= 100:
+            print(num, end=' ')
     print()
+
