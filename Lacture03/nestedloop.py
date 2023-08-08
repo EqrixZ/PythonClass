@@ -11,4 +11,3 @@ for h in range(1, 101, columns):
         if num <= 100:
             print(num, end=' ')
     print()
-
